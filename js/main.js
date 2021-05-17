@@ -50,11 +50,20 @@ document.querySelector('.menu__list').addEventListener('click', () => {
 })
 
 function scrollTo(elem) {
-  window.scroll({
-    left: 0,
-    top: elem.offsetTop - 150,
-    behavior: 'smooth'
-  })
+  if (document.documentElement.clientWidth < 992) {
+    window.scroll({
+      left: 0,
+      top: elem.offsetTop - 45,
+      behavior: 'smooth'
+    })
+  } else {
+    window.scroll({
+      left: 0,
+      top: elem.offsetTop - 150,
+      behavior: 'smooth'
+    }
+    )
+  }
 }
 
 function scrollToProject(elem) {
