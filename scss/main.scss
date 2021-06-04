@@ -219,6 +219,9 @@ a{
     display: flex;
     &-item{
       color: $white-color;
+      &-active{
+        border-bottom: 2px solid $white-color;
+      }
     }
     &:before{
       content: "";
@@ -606,7 +609,7 @@ footer{
 }
 
 @media screen and (max-width: 992px){
-  h1, .about-me h2, .skills h2, .education h2, .projects h2{
+  h1, .about-me h2, .skills h2, .education h2, .project h2{
     &:before{
       display: none;
     }
