@@ -325,6 +325,10 @@ a {
   color: #fff;
 }
 
+.fixed-bar__language-item-active {
+  border-bottom: 2px solid #fff;
+}
+
 .fixed-bar__language:before {
   content: "";
   position: absolute;
@@ -757,10 +761,10 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-  h1:before, .about-me h2:before, .skills h2:before, .education h2:before, .projects h2:before {
+  h1:before, .about-me h2:before, .skills h2:before, .education h2:before, .project h2:before {
     display: none;
   }
-  h1:after, .about-me h2:after, .skills h2:after, .education h2:after, .projects h2:after {
+  h1:after, .about-me h2:after, .skills h2:after, .education h2:after, .project h2:after {
     display: none;
   }
   .about-me__image {
